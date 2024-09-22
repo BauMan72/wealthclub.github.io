@@ -1,0 +1,188 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Playfair Display', serif;
+    height: 100%;
+    background-color: #2f1e0e; /* Dark wooden brown */
+    color: #fff;
+    scroll-behavior: smooth;
+    line-height: 1.6;
+}
+
+#main-wrapper, #registration-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Luxury Fonts and Colors */
+h1, h2, strong {
+    font-family: 'Cinzel', serif;
+    color: #d4af37; /* Golden color */
+}
+
+p, label {
+    color: #eee; /* Softer white for text */
+}
+
+button, a.btn {
+    background-color: #d4af37;
+    color: #2f1e0e;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-family: 'Cinzel', serif;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+button:hover, a.btn:hover {
+    background-color: #b28e30;
+}
+
+/* Landing Page */
+.landing {
+    text-align: center;
+    padding: 200px 0; /* Increased padding to avoid collision */
+    background-color: #2f1e0e;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content {
+    max-width: 800px;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    color: #d4af37;
+    margin-top: 10px;
+}
+
+/* Introduction Section */
+.introduction {
+    text-align: center;
+    padding: 50px;
+    background-color: #3a2513;
+    margin-bottom: 50px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.introduction p {
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #fff;
+}
+
+/* Proof Room Section */
+.proof-room {
+    background-color: #2f1e0e;
+    padding: 60px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.proof-card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.proof-card {
+    background-color: #3a2513;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    max-width: 300px;
+}
+
+.proof-card h4 {
+    margin-top: 10px;
+    font-family: 'Cinzel', serif;
+}
+
+/* Registration Section */
+.registration-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.registration-content form {
+    background-color: #3a2513;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.registration-content input, .registration-content textarea, .registration-content select {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4e3420;
+    color: #fff;
+    font-family: 'Cinzel', serif;
+}
+
+.registration-content button {
+    width: 100%;
+}
+
+/* Details Section */
+.details {
+    background-color: #2f1e0e;
+    padding: 50px;
+    text-align: center;
+}
+
+.details p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #3a2513;
+    color: #d4af37;
+    font-family: 'Cinzel', serif;
+}
+
+/* Smooth Fade-in Animations */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.fade-in-on-scroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
