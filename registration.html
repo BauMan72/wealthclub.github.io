@@ -1,21 +1,66 @@
-<form action="submit_registration.php" method="POST">
-    <label for="name">Teljes név:</label>
-    <input type="text" id="name" name="name" required>
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WEALTH GROUP - Regisztráció</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts for Premium Feel -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Playfair+Display:ital,wght@1,400&display=swap" rel="stylesheet">
+</head>
+<body>
 
-    <label for="email">Email cím:</label>
-    <input type="email" id="email" name="email" required>
+<!-- Registration Page Wrapper -->
+<div id="registration-wrapper">
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-content">
+            <h1>Regisztráció</h1>
+            <p>Lépj be a WEALTH GROUP elit közösségébe</p>
+        </div>
+    </header>
 
-    <label for="business">Üzleti érdekeltség:</label>
-    <input type="text" id="business" name="business" required>
+    <!-- Spectacular Registration Form Section -->
+    <section id="registration-form" class="registration">
+        <div class="registration-content">
+            <h2>Csatlakozz a WEALTH GROUP-hoz</h2>
+            <p>
+                Töltsd ki az alábbi űrlapot, és lépj be a WEALTH GROUP exkluzív világába. Miután elküldted a jelentkezésed, szűrési folyamatunk
+                alapján eldöntjük, hogy meghívást kaphatsz-e erre a kivételes útra.
+            </p>
 
-    <label for="message">Üzenet:</label>
-    <textarea id="message" name="message" rows="4" required></textarea>
+            <!-- Form action updated with Formspree endpoint -->
+            <form action="https://formspree.io/f/mgvwjzzb" method="POST">
+                <label for="name">Teljes név:</label>
+                <input type="text" id="name" name="name" required>
 
-    <label for="subscription">Válaszd ki a csomagot:</label>
-    <select id="subscription" name="subscription" required>
-        <option value="monthly">Havi előfizetés - 100,000 HUF/hó</option>
-        <option value="yearly">Éves előfizetés - 1,000,000 HUF/év</option>
-    </select>
+                <label for="email">Email cím:</label>
+                <input type="email" id="email" name="email" required>
 
-    <button type="submit">Küldés</button>
-</form>
+                <label for="business">Üzleti érdekeltség:</label>
+                <input type="text" id="business" name="business" required>
+
+                <label for="message">Üzenet:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <label for="subscription">Válaszd ki a csomagot:</label>
+                <select id="subscription" name="subscription" required>
+                    <option value="monthly">Havi előfizetés - 100,000 HUF/hó</option>
+                    <option value="yearly">Éves előfizetés - 1,000,000 HUF/év</option>
+                </select>
+
+                <button type="submit">Küldés</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 WEALTH GROUP | Az elit kiválasztás helye</p>
+    </footer>
+</div>
+
+</body>
+</html>
